@@ -12,7 +12,7 @@ from django.template import RequestContext, loader
 
 
 def index(request):
-    t = loader.get_template('boogie/index.html')
+    t = loader.get_template('watersnake/index.html')
     
     c = RequestContext(request, {
     })
