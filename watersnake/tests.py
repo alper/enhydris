@@ -6,8 +6,8 @@ from django.utils import unittest
 
 class TestVotesWithoutDelegation(unittest.TestCase):
     def setUp(self):
-        self.yea_voters = [Voter.objects.create_voter_and_user('yea_%d' % i) for i in range(11)]
-        self.nay_voters = [Voter.objects.create_voter_and_user('nay_%d' % i) for i in range(12)]
+        self.yea_voters = [Voter.objects.create_voter_and_user('yea_%d' % i) for i in range(4)]
+        self.nay_voters = [Voter.objects.create_voter_and_user('nay_%d' % i) for i in range(5)]
 
         self.topic = Topic.objects.create(title='Test topic')
         self.proposal = Proposal.objects.create(proposer=self.yea_voters[0], topic=self.topic, text='Test proposal text')
@@ -35,13 +35,13 @@ class TestVotesWithoutDelegation(unittest.TestCase):
 
 class TestVotesWithDelegation(unittest.TestCase):
     def setUp(self):
-        self.yea_voters = [Voter.objects.create_voter_and_user('yea_%d' % i) for i in range(11)]
-        self.nay_voters = [Voter.objects.create_voter_and_user('nay_%d' % i) for i in range(12)]
+        self.yea_voters = [Voter.objects.create_voter_and_user('yea_%d' % i) for i in range(4)]
+        self.nay_voters = [Voter.objects.create_voter_and_user('nay_%d' % i) for i in range(5)]
 
         self.topic = Topic.objects.create(title='Test topic')
         self.proposal = Proposal.objects.create(proposer=self.yea_voters[0], topic=self.topic, text='Test proposal text')
 
-        # These two people delaget their votes to the yea side
+        # These two people delegate their votes to the yea side
         self.delegators = [Voter.objects.create_voter_and_user('delegator_%d' % i) for i in range(2)]
 
         for delegator in self.delegators:
