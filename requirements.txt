@@ -1,0 +1,5 @@
+git+git://github.com/django/django.git@1.5b2
+South==0.7.6
+dj-database-url==0.2.1
+psycopg2
+django-nose==1.1

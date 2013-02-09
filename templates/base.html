@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>{% block pagetitle %}{% endblock %} &ndash; Victory Boogie Woogie</title>
+	
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- Facebook Open Graph Tags https://developers.facebook.com/docs/reference/plugins/like/ -->
+	<meta property="og:title" content="Victory Boogie Woogie" />
+    <meta property="og:type" content="game" />
+    <meta property="og:url" content="http://www.gidsgame.nl/" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Victory Boogie Woogie" />
+    <meta property="fb:admins" content="1284304749" />
+	
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/main.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}webfonts/ss-standard.css">
+	
+	<script src="{{ STATIC_URL }}js/vendor/modernizr-2.6.2.min.js"></script>
+	
+	<script type="text/javascript" src="//use.typekit.net/nhp4ozy.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+	
+<body id="">
+
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- DOCUMENT -->
+<div id="document" role="document" class="clearfix">
+
+	
+	<!-- MAIN -->
+	<div id="main" role="main" class="clearfix">
+			
+		<!-- CONTENT -->
+		<section id="content" class="wrapper clearfix">
+			{% block content %}
+			{% endblock %}
+		</section>
+		
+	</div>
+	<!-- END MAIN -->
+	
+</div>
+<!-- END DOCUMENT -->
+
+
+</body>
+</html>

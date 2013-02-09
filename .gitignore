@@ -1,0 +1,6 @@
+assets
+venv
+build
+*.pyc
+.DS_Store
+celerybeat-schedule.db
