@@ -9,6 +9,7 @@ Todo
 * Create generic views and templates to make this work in the browser.
 * Wrap critical sections in a transaction
 * Make a celery worker that does the resolution of votes when proposals close.
+* Delegations should be transitive (as in Liquid Feedback)?
 
 Setup
 -----
