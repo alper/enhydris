@@ -11,6 +11,7 @@ Todo
 * Create generic views and templates to make this work in the browser.
 * Wrap critical sections in a transaction
 * Make a celery worker that does the resolution of votes when proposals close.
+* Integrate more advanced voting methods using: https://github.com/bradbeattie/python-vote-core
 
 Setup
 -----
