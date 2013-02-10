@@ -47,7 +47,7 @@ class Proposal(models.Model):
     def resolve_votes(self):
         yea_votes = Vote.objects.filter(vote='yea', proposal=self).count()
         nay_votes = Vote.objects.filter(vote='nay', proposal=self).count()
-        abstains = Vote.objects.filter(vote='nay', proposal=self).count()
+        # abstains = Vote.objects.filter(vote='abstain', proposal=self).count()
 
         # Process the delegations
 
