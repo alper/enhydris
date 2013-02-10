@@ -1,7 +1,9 @@
 Django Delegate Voting System
 =============================
 
-A barebones minimal requirements delegate voting system created as a proof of concept.
+A barebones simple majority voting system with delegates created as a proof of concept.
+
+The main goals to be proved were that it is possible and easy to build a system like this on a standard stack that everybody can understand and deploy without too much hassle.
 
 Todo
 ----
@@ -9,10 +11,11 @@ Todo
 * Create generic views and templates to make this work in the browser.
 * Wrap critical sections in a transaction
 * Make a celery worker that does the resolution of votes when proposals close.
-* Delegations should be transitive (as in Liquid Feedback)?
 
 Setup
 -----
+
+This is all standard django setup as explained here: https://devcenter.heroku.com/articles/django
 
 1. Install homebrew, by getting the commandline tools: https://developer.apple.com/downloads and then do the install homebrew here: http://mxcl.github.com/homebrew/ (I don't think this is require but the XCode Command Line Tools are.)
 2. Open Terminal.app
